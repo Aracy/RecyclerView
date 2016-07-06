@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RefreshLoadMoreRecyclerView</string>
+
+    <string name="please_waite_to_refresh">正在加载，请稍后&#8230;</string>
+    <string name="refresh_failed">加载失败，请点击重试</string>
+    <string name="data_loaded">数据已全部加载</string>
+
+</resources>
