@@ -1,11 +1,11 @@
-package com.aracy.refresh.load.more.recyclerview.widget;
+package com.aracy.load.more.widget;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 
-import com.aracy.refresh.load.more.recyclerview.adapter.LoadMoreAdapter;
+import com.aracy.load.more.adapter.LoadMoreAdapter;
 
 /**
  * @author Sun.bl
@@ -100,7 +100,7 @@ public class LoadMoreRecyclerView extends RecyclerView {
     /**
      * 设置加载更多的接口
      *
-     * @param loadMoreApi
+     * @param loadMoreApi 加载更多调用的接口
      */
     public void setLoadMoreApi(LoadMoreAdapter.LoadMoreApi loadMoreApi) {
 
@@ -120,7 +120,7 @@ public class LoadMoreRecyclerView extends RecyclerView {
     /***
      * 设置是否显示全部加载完成的view
      *
-     * @param showAllLoadView
+     * @param showAllLoadView <code>true</code> 表示在底部显示全部加载的view
      */
     public void setShowAllLoadView(boolean showAllLoadView) {
         if (showAllLoadView == this.showAllLoadView) {

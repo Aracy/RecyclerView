@@ -1,4 +1,4 @@
-package com.aracy.refresh.load.more.recyclerview.util;
+package com.aracy.load.more.util;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;

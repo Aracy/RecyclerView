@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.aracy.refresh.load.more.recyclerview.MainActivity">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.aracy.load.more.MainActivity">
 
     <in.srain.cube.views.ptr.PtrClassicFrameLayout
         android:id="@+id/ptr_frame_layout"
@@ -17,10 +17,10 @@
         app:ptr_ratio_of_header_height_to_refresh="1.2"
         app:ptr_resistance="1.7">
 
-        <com.aracy.refresh.load.more.recyclerview.widget.LoadMoreRecyclerView
+        <com.aracy.load.more.widget.LoadMoreRecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
 
     </in.srain.cube.views.ptr.PtrClassicFrameLayout>
 

@@ -1,16 +1,15 @@
-package com.aracy.refresh.load.more.recyclerview.adapter;
+package com.aracy.load.more.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.aracy.refresh.load.more.recyclerview.R;
+import com.aracy.load.more.R;
 
 
 /**
@@ -77,11 +76,19 @@ public class LoadMoreAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             return;
         }
         adapter.onBindViewHolder(holder, position);
+
     }
 
     @Override
     public void registerAdapterDataObserver(RecyclerView.AdapterDataObserver observer) {
+        adapter.registerAdapterDataObserver(observer);
         super.registerAdapterDataObserver(observer);
+    }
+
+    @Override
+    public void unregisterAdapterDataObserver(RecyclerView.AdapterDataObserver observer) {
+        adapter.unregisterAdapterDataObserver(observer);
+        super.unregisterAdapterDataObserver(observer);
     }
 
     /**
